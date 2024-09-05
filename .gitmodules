@@ -1,0 +1,4 @@
+[submodule "submodules/melatonin_blur"]
+	path = submodules/melatonin_blur
+	url = https://github.com/sudara/melatonin_blur.git
+	branch = main
