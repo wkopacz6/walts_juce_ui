@@ -1,7 +1,7 @@
 #pragma once
 
 #include "juce_gui_basics/juce_gui_basics.h"
-#include <melatonin_blur/melatonin_blur.h>
+#include "../submodules/melatonin_blur/melatonin_blur.h"
 #include "WaltsUiBinaryData.h"
 
 
