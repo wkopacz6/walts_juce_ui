@@ -30,7 +30,7 @@ BEGIN_JUCE_MODULE_DECLARATION
  license:          MIT
  minimumCppStandard: 17
 
- dependencies:     juce_core
+ dependencies:     melatonin_blur, juce_core, juce_gui_basics
 END_JUCE_MODULE_DECLARATION
 */
 

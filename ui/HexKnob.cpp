@@ -1,4 +1,4 @@
-#include "TheVerbKnob.h"
+#include "HexKnob.h"
 
 namespace
 {
@@ -24,7 +24,7 @@ void HexKnobLnf::drawRotarySlider (juce::Graphics& g, int x, int y, int width, i
     auto bottomHexBounds { boundsCopy.removeFromBottom (bottomHexHeight) };
     const auto dotSize { bounds.proportionOfWidth (0.0365) };
 
-    g.setColour (Colors::hexKnobLightGray);
+    g.setColour (hexKnobLightGray);
     auto leftEndMarkerBounds { bottomHexBounds.removeFromLeft (dotSize) };
     g.fillEllipse (leftEndMarkerBounds.removeFromTop (dotSize));
 
@@ -68,7 +68,7 @@ HexKnob::HexKnob (juce::StringRef name)
     knob.setRotaryParameters ({ 0.0, 4.18879, true });
 
     label.setText (name, juce::NotificationType::dontSendNotification);
-    label.setColour (juce::Label::ColourIds::textColourId, Colors::hexKnobLightGray);
+    label.setColour (juce::Label::ColourIds::textColourId, hexKnobLightGray);
     label.setJustificationType (juce::Justification::centred);
 
     addAndMakeVisible (knob);
